@@ -53,7 +53,32 @@ namespace GITVJEZBALOTO
             if (ispravni)
             {
                 loto.SpremiUplaceneBrojeve(int.Parse(txtUplaceni1.Text), int.Parse(txtUplaceni2.Text), int.Parse(txtUplaceni3.Text), int.Parse(txtUplaceni4.Text), int.Parse(txtUplaceni5.Text), int.Parse(txtUplaceni6.Text), int.Parse(txtUplaceni7.Text));
+                BtnOdigraj.Enabled = true;
             }
+            else
+            {
+                MessageBox.Show("Doslo je do greske, pokusajte ponovo.");
+            }
+        }
+
+        private void BtnOdigraj_Click(object sender, EventArgs e)
+        {
+            txtDobitni1.Text = loto.DobitniBrojevi[0].ToString();
+            txtDobitni2.Text = loto.DobitniBrojevi[1].ToString();
+            txtDobitni3.Text = loto.DobitniBrojevi[2].ToString();
+            txtDobitni4.Text = loto.DobitniBrojevi[3].ToString();
+            txtDobitni5.Text = loto.DobitniBrojevi[4].ToString();
+            txtDobitni6.Text = loto.DobitniBrojevi[5].ToString();
+            txtDobitni7.Text = loto.DobitniBrojevi[6].ToString();
+            int brojPogodaka = 0;
+            foreach (int broj in loto.UplaceniBrojevi)
+            {
+                if (loto.DobitniBrojevi.Contains(broj) == true)
+                {
+                    brojPogodaka++;
+                }
+            }
+            lblBrojPogodakaaa.Text = brojPogodaka.ToString();
         }
     }
 }

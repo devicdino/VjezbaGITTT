@@ -209,6 +209,7 @@
             this.BtnOdigraj.TabIndex = 10;
             this.BtnOdigraj.Text = "Odigraj";
             this.BtnOdigraj.UseVisualStyleBackColor = true;
+            this.BtnOdigraj.Click += new System.EventHandler(this.BtnOdigraj_Click);
             // 
             // label1
             // 

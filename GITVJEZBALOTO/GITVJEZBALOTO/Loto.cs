@@ -13,12 +13,7 @@ namespace GITVJEZBALOTO
 
         public Loto()
         {
-            for (int i = 0; i < 7; i++)
-            {
-                Random random = new Random();
-                int broj = random.Next(1, 40);
-                DobitniBrojevi.Add(broj);
-            }
+            
         }
 
         public void SpremiUplaceneBrojeve(int prvi, int drugi, int treci, int cetvrti, int peti, int sesti, int sedmi)
@@ -30,6 +25,12 @@ namespace GITVJEZBALOTO
             UplaceniBrojevi.Add(peti);
             UplaceniBrojevi.Add(sesti);
             UplaceniBrojevi.Add(sedmi);
+            Random random = new Random();
+            for (int i = 0; i < 7; i++)
+            {
+                int broj = random.Next(1, 40);
+                DobitniBrojevi.Add(broj);
+            }
         }
     }
 }
