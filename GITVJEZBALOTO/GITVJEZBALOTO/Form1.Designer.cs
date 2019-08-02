@@ -109,6 +109,7 @@
             this.BtnUplati.TabIndex = 9;
             this.BtnUplati.Text = "Uplati";
             this.BtnUplati.UseVisualStyleBackColor = true;
+            this.BtnUplati.Click += new System.EventHandler(this.BtnUplati_Click);
             // 
             // GbUplacena
             // 
@@ -148,6 +149,7 @@
             // 
             this.txtDobitni5.Location = new System.Drawing.Point(388, 66);
             this.txtDobitni5.Name = "txtDobitni5";
+            this.txtDobitni5.ReadOnly = true;
             this.txtDobitni5.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni5.TabIndex = 3;
             // 
@@ -155,6 +157,7 @@
             // 
             this.txtDobitni4.Location = new System.Drawing.Point(297, 66);
             this.txtDobitni4.Name = "txtDobitni4";
+            this.txtDobitni4.ReadOnly = true;
             this.txtDobitni4.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni4.TabIndex = 4;
             // 
@@ -162,6 +165,7 @@
             // 
             this.txtDobitni3.Location = new System.Drawing.Point(211, 66);
             this.txtDobitni3.Name = "txtDobitni3";
+            this.txtDobitni3.ReadOnly = true;
             this.txtDobitni3.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni3.TabIndex = 5;
             // 
@@ -169,6 +173,7 @@
             // 
             this.txtDobitni2.Location = new System.Drawing.Point(118, 66);
             this.txtDobitni2.Name = "txtDobitni2";
+            this.txtDobitni2.ReadOnly = true;
             this.txtDobitni2.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni2.TabIndex = 6;
             // 
@@ -176,6 +181,7 @@
             // 
             this.txtDobitni1.Location = new System.Drawing.Point(27, 66);
             this.txtDobitni1.Name = "txtDobitni1";
+            this.txtDobitni1.ReadOnly = true;
             this.txtDobitni1.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni1.TabIndex = 7;
             // 
@@ -183,6 +189,7 @@
             // 
             this.txtDobitni6.Location = new System.Drawing.Point(480, 66);
             this.txtDobitni6.Name = "txtDobitni6";
+            this.txtDobitni6.ReadOnly = true;
             this.txtDobitni6.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni6.TabIndex = 8;
             // 
@@ -190,6 +197,7 @@
             // 
             this.txtDobitni7.Location = new System.Drawing.Point(566, 66);
             this.txtDobitni7.Name = "txtDobitni7";
+            this.txtDobitni7.ReadOnly = true;
             this.txtDobitni7.Size = new System.Drawing.Size(60, 22);
             this.txtDobitni7.TabIndex = 9;
             // 
